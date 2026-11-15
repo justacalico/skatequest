@@ -55,6 +55,12 @@ Verified on Fedora Linux 44 with Flutter 3.47.7 (stable), Dart 3.13.5:
   were not installed on the verification machine, so Android and web builds
   are untested
 
+## CI
+
+`.github/workflows/flutter-ci.yml` runs `flutter pub get`,
+`flutter analyze`, and `flutter test` on Ubuntu with Flutter 3.47.7
+(stable) for every pull request and push to `main`.
+
 ## Known limitations
 
 - No gameplay exists yet, only the template counter screen
